@@ -285,7 +285,7 @@
 				// chrome seems to extends its "wheely" motion
 				wheely = Math.floor( wheely / 5 );
 			}
-			if( ( ! scrolling || ( options.mouseWheelDelay && Date.now() > mouseWheelScrollStart + options.mouseWheelDelay ) ) && Math.abs( wheely ) > 5 ) {
+			if( ( ! scrolling || ( options.mouseWheelDelay && Date.now() > mouseWheelScrollStart + options.mouseWheelDelay ) ) && Math.abs( wheely ) > 2.9 ) {
 				mouseWheelScrollStart = Date.now();
 				scrolling = true;
 				var allowToRun = true;
